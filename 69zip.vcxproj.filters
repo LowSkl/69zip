@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Файлы заголовков\Методы Сжатия">
+      <UniqueIdentifier>{9db41da5-e4c4-42e4-bb28-d8177e54dea8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -24,7 +27,10 @@
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="Huffman.h">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>Файлы заголовков\Методы Сжатия</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleCompression.h">
+      <Filter>Файлы заголовков\Методы Сжатия</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
