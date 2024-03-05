@@ -37,16 +37,13 @@ public:
 
 };
 
-int main() 
-{
-    std::string inputFileName;
-    std::cout << "Make sure your .txt file in same directory as compressor!\n";
-    std::cout << "Write your file name: ";
-    std::cin >> inputFileName;
-    Program idkName;
-    idkName.GetInputFile(inputFileName);
-    idkName.GetWorkingDirectory();
-    idkName.GetResultFile();
-    Method sc;
-    sc.Compress(idkName.inputFile, idkName.compressedFile);
+const enum EXIT_STATUS {
+    UNKNOWN_ERROR = -1,
+    SUCCESSFUL = 0,
+};
+
+int main(int argc, char *argv[]) {
+    std::cout << "Hello World!\n";
+
+    return EXIT_STATUS::SUCCESSFUL();
 }
