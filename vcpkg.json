@@ -1,0 +1,10 @@
+{
+  "name": "69zip",
+  "version": "0.1.0",
+  "dependencies": [
+    {
+      "name": "opencv2",
+      "features": []
+    }
+  ]
+}

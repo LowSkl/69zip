@@ -1,5 +1,5 @@
 ﻿#include "stdafx.h"
-#include "SimpleCompression.h"
+#include "draw.h"
 
 
 class Program {
@@ -20,7 +20,7 @@ public:
     {
         if (!fs::exists(workingDirectory / file))
         {
-            std::cout << "|NOFILE|\n";
+            std::cout << "NOFILE\n";
             exit(-1);
         }
         inputFile = workingDirectory / file;
@@ -42,8 +42,10 @@ const enum EXIT_STATUS {
     SUCCESSFUL = 0,
 };
 
-int main(int argc, char *argv[]) {
-    std::cout << "Hello World!\n";
+int main(int argc, char* argv[])
+{
+    Drawing dr;
+    cv::Mat image = cv::Mat::zeros(512, 512, CV_8UC3); // Create a black 512x512 image
+    dr.Draw(image);
 
-    return EXIT_STATUS::SUCCESSFUL();
 }

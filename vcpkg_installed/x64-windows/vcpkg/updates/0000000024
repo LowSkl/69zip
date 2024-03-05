@@ -1,0 +1,10 @@
+Package: opencv2
+Version: 2.4.13.7
+Port-Version: 19
+Depends: vcpkg-cmake, vcpkg-cmake-config, vcpkg-get-python-packages, zlib
+Architecture: x64-windows
+Multi-Arch: same
+Abi: c830cf477e67507422cc8124665f3935989807827ef37c6914adeba3ab252e4f
+Description: Open Source Computer Vision Library
+Default-Features: default-features
+Status: install ok half-installed
