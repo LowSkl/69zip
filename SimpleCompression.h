@@ -7,13 +7,13 @@ public:
 		std::fstream rawFile(toRead);
 		std::fstream compressedFile(toWrite);
 
-		char buffer[32768] = {};
+		char buffer[8096] = {};
 		rawFile >> buffer;
 		rawFile.close();
 
 		unsigned lastChar = 0;
 		int lastCharCount = 0;
-		for (int i = 0; i < 32768; i++) {
+		for (int i = 0; i < 8096; i++) {
 			if (i == 0) {
 				lastChar = buffer[i];
 				lastCharCount++;
